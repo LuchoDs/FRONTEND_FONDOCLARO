@@ -1,0 +1,294 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background-color: #f8f5efe9;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+        background-color: #7d0f2d;
+}
+
+header {
+    position: sticky;
+    top: 0; /*que quede fijo arriba*/
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 10rem;
+    width: auto;
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.enlaces  {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    font-weight: 400;
+   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+
+.titulo-productos, .titulo-principal {
+    margin: 2rem 1rem 0;
+    text-align: left;
+}
+
+.titulo-principal {
+    text-align:left;
+    font-size: 6.5rem;
+    
+   
+}    
+
+h2 {
+    padding-left: .5rem;
+    font-size: 4rem;
+    color:#f6b70b;
+    /*background-color: #FDD07A;*/
+    /*padding: 1rem;*/
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas bajen a la siguiente línea */
+    justify-content:flex-start;
+    gap: 6rem;
+    width: auto;
+    margin-left: 4rem;
+    padding: 2rem 4rem;
+    margin-bottom: 9rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color:#ffffff;
+    align-items: center;
+    
+}
+
+.card h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card p {
+   padding: 0 0 1rem;
+}
+
+.card img {
+    width: 50%;
+    object-fit:cover; /* Proporción original sin estirar */
+    overflow: hidden;
+    padding-top: 2.1rem;
+    padding-bottom: .7rem;
+}
+
+.card button {
+    margin-top: auto;
+    margin-bottom: 1rem; /* Que el botón quede al fondo de la tarjeta */
+    width: 80%;       /* Para que no ocupe todo el ancho */
+    cursor: pointer;
+    height: 3.7rem;
+    
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;    /* Para centra horizontalmente todo el contenido */
+    flex-direction: row-reverse;
+    padding: 0 4rem;
+}
+
+.footer-list {
+    flex-direction: row;
+    padding: .5rem;
+    gap: 4rem;
+    
+}
+
+a, .leyenda {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.iconitos {
+    vertical-align: middle;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.leyenda {
+    font-size: 2rem;
+}
+
+.btn {
+    display: flex;
+    border-radius: 1rem;
+    cursor: pointer; 
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid black;
+}
+
+.btn:hover {
+    background-color: rgb(89, 255, 18);
+    border: .2rem solid transparent;
+}
+
+.bg-secondary {
+    background-color: antiquewhite;
+    font-size: 2rem;
+}
+
+.text-dark {
+    color: black;
+}
+
+
+.nav-shop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;       /* círculo */
+    padding: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    filter: drop-shadow(0rem 0rem 2rem rgba(244, 164, 79, 0.841));
+    position: fixed;
+    bottom: 6rem;
+    right: 4rem;
+}
+
+.shop {
+    width: 90%;
+    height:90%;
+    object-fit: contain; 
+}
+
+/* -----------------------------------------------------------------*/
+/*                               CARRITO                            */
+/* -----------------------------------------------------------------*/
+
+.construccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----------------------------------------------------------------*/
+/*                             HOJA DE CONTACTO                     */
+/* -----------------------------------------------------------------*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color:#f9e9b6e9;
+    width: 40rem;
+    max-width: 90%;
+    padding: 2rem 2rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.5); 
+    margin: 3rem auto 15rem;
+   
+}
+
+form {    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+    
+}
+
+.contacto {
+    
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+label {
+    font-size: 1.85rem;
+    align-self: flex-start;
+    margin-left: 0;
+    font-weight: 600;
+    text-align: left;
+    }
+
+input, textarea {
+    padding: .5rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 4rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 14rem;
+    padding-top: 1rem;
+    resize: vertical; /* Impide que se estire hacia los lados y ensanche el fondo*/
+}
+
+.bg-primary {
+    width: 100%;
+    margin-top: 1.5rem;
+    font-size:3rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1.6rem;
+}
