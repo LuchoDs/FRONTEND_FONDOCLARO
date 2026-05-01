@@ -64,7 +64,7 @@ main {
     margin-bottom: 15rem;
 }
 
-.titulo-productos, .titulo-principal {
+.titulo-principal {
     margin: 2rem 1rem 0;
     text-align: left;
 }
@@ -72,11 +72,10 @@ main {
 .titulo-principal {
     text-align:left;
     font-size: 6.5rem;
-    
-   
 }    
 
-h2 {
+.titulo-productos {
+    margin: 1.5rem 1rem 0;
     padding-left: .5rem;
     font-size: 4rem;
     color:#f6b70b;
@@ -198,18 +197,18 @@ a, .leyenda {
     background-color: white;
     border-radius: 50%;       /* círculo */
     padding: 1.5rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     cursor: pointer;
     filter: drop-shadow(0rem 0rem 2rem rgba(244, 164, 79, 0.841));
     position: fixed;
-    bottom: 6rem;
+    top: 10rem;
     right: 4rem;
 }
 
 .shop {
-    width: 90%;
-    height:90%;
+    width: 95%;
+    height:95%;
     object-fit: contain; 
 }
 
