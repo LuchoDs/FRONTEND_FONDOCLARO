@@ -67,15 +67,11 @@ main {
 .titulo-principal {
     margin: 2rem 1rem 0;
     text-align: left;
+    font-size: 6.5rem;
 }
 
-.titulo-principal {
-    text-align:left;
-    font-size: 6.5rem;
-}    
-
 .titulo-productos {
-    margin: 1.5rem 1rem 0;
+    margin: 1.3rem 1rem 0;
     padding-left: .5rem;
     font-size: 4rem;
     color:#f6b70b;
@@ -85,13 +81,14 @@ main {
 
 .contenedor-tarjetas {
     display: flex;
-    flex-wrap: wrap; /* Para que las tarjetas bajen a la siguiente línea */
+    flex-wrap: wrap; /* Permitir que las tarjetas bajen a la siguiente línea cuando se achica la pantalla*/
     justify-content:flex-start;
     gap: 6rem;
     width: auto;
     margin-left: 4rem;
     padding: 2rem 4rem;
     margin-bottom: 9rem;
+    filter: drop-shadow(0rem 0rem 1rem rgba(244, 164, 79, 0.841));
 }
 
 .card {
@@ -200,7 +197,7 @@ a, .leyenda {
     width: 8rem;
     height: 8rem;
     cursor: pointer;
-    filter: drop-shadow(0rem 0rem 2rem rgba(244, 164, 79, 0.841));
+    filter: drop-shadow(0rem 0rem 1rem rgba(244, 164, 79, 0.841));
     position: fixed;
     top: 10rem;
     right: 4rem;
