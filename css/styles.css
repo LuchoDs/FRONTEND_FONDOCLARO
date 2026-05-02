@@ -212,7 +212,7 @@ a, .leyenda {
 
 /* -----------------------------------------------------------------*/
 /*                               CARRITO                            */
-/*Por ahora ninguna idea absurda*/
+/*                   Por ahora ninguna idea absurda                 */
 /* -----------------------------------------------------------------*/
 
 
@@ -244,7 +244,6 @@ form {
 }
 
 .contacto {
-    
     font-size: 5rem;
     margin-top: 5rem;
     margin-bottom: .5rem;
@@ -290,13 +289,45 @@ textarea {
 /*                             MEDIA QUERIES                        */
 /* -----------------------------------------------------------------*/
 
-/* PAGINA PRINCIPAL SE JUNTA EL CARRO CON EL TITULO PRINCIPAL AL LLEGAR A 572px DE ANCHO 
-- ¿DISMINUIR TAMAÑO DE FUENTE? -- ¿CAMBIAR EL CARRITO AL HEADER? 
+/* PAGINA INDEX y CONTACTO SE JUNTA EL CARRO CON EL TITULO PRINCIPAL AL LLEGAR A 572px y 610px DE ANCHO*/
 
-PAGINA CONTANCTO, SE JUNTA EL CARRITO CON EL TITULO A LOS  610px - 
-reubicacion del carrito a la parte baja de la pantalla
-footer y header dejan espacio vacio, a los 372 px
-en footer se genera desborde a los 370px
+/*1.- Reubicacion del carrito a la parte baja de la pantalla.
+2.- footer y header dejan espacio vacio, a los 372 px, en footer se genera desborde a los 370px -no voy a adaptar esto.*/
 
-PAGINA CARRITO, NO ES OBLIGATORIA, PERO NO ES RESPONSIVA EN NADA*/
+/*PAGINAS INDEX Y CONTACTO*/
+@media screen and (max-width: 610px) {
+    .nav-shop {
+        width: 6rem;
+        height: 6rem;
+        top:auto;
+        bottom: 6rem;
+        right: 1rem;
+    }
+    .titulo-principal {
+        font-size: 4rem;
+    }
 
+    .titulo-productos {
+        font-size: 2.5rem;
+    }
+
+    .contenedor-tarjetas {
+        margin-left: 1rem;
+    }
+
+    .form-container {   
+        width: 25rem;
+        margin: 3rem auto 15rem;
+    }
+}
+
+/*PAGINA CARRITO, NO ES OBLIGATORIA* modifico tamaño de fuente, color y ubicación*/
+
+/*PAGINA: CARRITO*/
+@media screen and (max-width: 470px) {
+    .construccion .titulo-principal {
+        font-size: 3rem;
+        color:red;
+        margin: 5rem 1rem 0;
+    }
+}
