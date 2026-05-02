@@ -8,7 +8,8 @@
 
 html {
     font-size: 62.5%;
-    
+    overflow-y: scroll; /*utilizado porque el header de la pagina carrito, ocupaba mas espacio al no tener barra de scroll
+    , y los nav se veian corridos a la derecha*/
 }
 
 body {
@@ -211,13 +212,9 @@ a, .leyenda {
 
 /* -----------------------------------------------------------------*/
 /*                               CARRITO                            */
+/*Por ahora ninguna idea absurda*/
 /* -----------------------------------------------------------------*/
 
-.construccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /* -----------------------------------------------------------------*/
@@ -288,3 +285,18 @@ textarea {
     padding: 1rem;
     margin-bottom: 1.6rem;
 }
+
+/* -----------------------------------------------------------------*/
+/*                             MEDIA QUERIES                        */
+/* -----------------------------------------------------------------*/
+
+/* PAGINA PRINCIPAL SE JUNTA EL CARRO CON EL TITULO PRINCIPAL AL LLEGAR A 572px DE ANCHO 
+- ¿DISMINUIR TAMAÑO DE FUENTE? -- ¿CAMBIAR EL CARRITO AL HEADER? 
+
+PAGINA CONTANCTO, SE JUNTA EL CARRITO CON EL TITULO A LOS  610px - 
+reubicacion del carrito a la parte baja de la pantalla
+footer y header dejan espacio vacio, a los 372 px
+en footer se genera desborde a los 370px
+
+PAGINA CARRITO, NO ES OBLIGATORIA, PERO NO ES RESPONSIVA EN NADA*/
+
