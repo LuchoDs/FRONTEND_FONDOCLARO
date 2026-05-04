@@ -177,7 +177,8 @@ a, .leyenda {
 
 .bg-secondary {
     background-color: antiquewhite;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    padding: .2rem;
 }
 
 .text-dark {
