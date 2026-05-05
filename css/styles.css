@@ -211,23 +211,18 @@ a, .leyenda {
 }
 
 /* -----------------------------------------------------------------*/
-/*                               CARRITO                            */
-/*                   Por ahora ninguna idea absurda                 */
-/* -----------------------------------------------------------------*/
-
-/* -----------------------------------------------------------------*/
 /*                             HOJA DE CONTACTO                     */
 /* -----------------------------------------------------------------*/
 .form-container {
     display: flex;
     flex-direction: column;
-    background-color:#f9e9b6e9;
+    background-color:#faf2dae2;
     width: 40rem;
     max-width: 90%;
     padding: 2rem 2rem; 
     border-radius: 1rem; 
-    box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.5); 
     margin: 3rem auto 15rem;
+    filter: drop-shadow(0rem 0rem 1rem rgba(244, 164, 79, 0.841));
 }
 
 form {    
@@ -277,6 +272,11 @@ textarea {
     padding: 1rem;
     margin-bottom: 1.6rem;
 }
+
+/* -----------------------------------------------------------------*/
+/*                               CARRITO                            */
+/*                   Por ahora ninguna idea absurda                 */
+/* -----------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------*/
 /*                             MEDIA QUERIES                        */
